@@ -75,8 +75,14 @@ footer {
 }
 
 
-/*
-flex-shrink
-flex-grow
-flex-basis
+/* WERKT NIET ALS JE EEN VASTE WIDTH HEBT INGESETELD
+flex-shrink = hoeveel kleiner wordt het ten opzichte van de andere
+flex-grow = hoeveel groter wordt het ten opzichte van de andere
+flex-basis = tot hoe ver mag ik krimpen
+flex: auto = witruimte wordt gelijk verdeeld (wordt veel gebruikt)
+flex: none = article krimpt of groeit niet, niet flexibel zijn
+flex: 1 = dit artikel krijgt alle overige witruimte
+flex
+
+align-self: flex-start; /*BIJ ALIGN-ITEMS GEBRUIKEN, ANDERS WERKT HET NIET
  */
