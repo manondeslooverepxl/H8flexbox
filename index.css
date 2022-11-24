@@ -9,16 +9,39 @@ header {
     background-color: #3f195e;
     color: #fff;
     padding: 1rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li a {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #00264b;
+}
+
+nav ul li a:hover {
+   background-color: #00264b;
+    color: #ffffff;
+
 }
 
 main {
     background-color: #ccc;
-    height: 600px;
+    height: 30rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -27,6 +50,7 @@ main article {
     margin: 1rem;
     padding: 1rem;
     width: 20rem;
+    flex: initial;
 }
 
 footer {
@@ -37,13 +61,22 @@ footer {
 }
 
 #item1 {
-
+    flex-shrink: 1;
 }
 
 #item2 {
+    flex-shrink: 2;
 
 }
 
 #item3 {
+    flex-shrink: 3;
 
 }
+
+
+/*
+flex-shrink
+flex-grow
+flex-basis
+ */
